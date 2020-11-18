@@ -17,7 +17,8 @@ ${Y}                800
 *** Keywords ***
 Begining the test
     Open Browser        ${PROD}     ${BROWSER}
-    set window size     ${X}        ${Y}
+    maximize browser window
+
     sleep   5s
 
 Ending the tests by closing the browser
