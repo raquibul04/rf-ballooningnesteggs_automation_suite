@@ -1,9 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Resource    ../Resources/SetupEnv.robot
-Resource    ../Apps/RegisterApp.robot
-
-
+Resource    ../Apps/LoginApp.robot
 
 
 Test Setup          Begining the test
@@ -11,7 +9,7 @@ Test Teardown       Ending the tests by closing the browser
 
 
 *** Test Cases ***
-Users should be able to create an account on BallooningNestEggs applicaiton
+Users should be able to login to the BNE using valid username and password
     [Documentation]
-    [Tags]    register
-    RegisterApp.User inputs his/her information in order to create an account
+    [Tags]  login
+    LoginApp.User inputs his/her information in order to login to BNE
