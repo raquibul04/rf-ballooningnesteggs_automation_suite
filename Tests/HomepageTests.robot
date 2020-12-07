@@ -18,5 +18,20 @@ Users should be able to navigate to BallooningNestEggs website
 
 Users should be able to navigate to Our Story page
     [Documentation]
+    [Tags]    homepage
+    HomepageApp.Clicking on Our Story link from the top navigation
+
+Users should be able to navigate to Our Story page
+    [Documentation]
+    [Tags]    homepage
+    HomepageApp.Clicking on Our Story link from footer
+
+Users should be able to navigate to Partners Dashboard page from footer
+    [Documentation]
     [Tags]    homepage1
-    HomepageApp.Clicking on Our Story link for the top navigation
+    HomepageApp.Clicking on Partners Dashboard form About Us sction on footer
+
+Users should be able to navigate to Partners My Family page from footer
+    [Documentation]
+    [Tags]    homepage
+    HomepageApp.Clicking on Partners My Family form About Us sction on footer

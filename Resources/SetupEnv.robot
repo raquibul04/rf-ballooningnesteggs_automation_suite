@@ -7,8 +7,7 @@ Documentation    This file will include all the required set up components for t
 *** Variables ***
 ${PROD}             https://www.beta.ballooningnesteggs.com/
 ${BROWSER}          chrome
-${X}                1400
-${Y}                800
+
 
 
 
@@ -16,9 +15,9 @@ ${Y}                800
 
 *** Keywords ***
 Begining the test
-    Open Browser        ${PROD}     ${BROWSER}
+    Open Browser       about:blank     ${BROWSER}
+    go to              ${PROD}
     maximize browser window
-
     sleep   5s
 
 Ending the tests by closing the browser
