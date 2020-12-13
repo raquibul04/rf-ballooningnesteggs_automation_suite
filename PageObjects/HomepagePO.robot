@@ -13,6 +13,12 @@ ${PARTNERS_DASHBOARD_FOOTER}                //footer[@class="c-footer__wrapper"]
 ${PARTNERS_MY_FAMILY_FOOTER}                //footer[@class="c-footer__wrapper"]/div/div/div/div[1]/ul/li[3]
 ${PARTNERS_DASHBOARD_FOOTER_PAGE_TITLE}     Ballooning-Dashboard-Partners.pdf
 ${PARTNERS_MY_FAMILY_FOOTER_PAGE_TITLE}     Ballooning-My-Family-Partners.pdf
+${SPREAD_THE_WORD}                          //footer[@class="c-footer__wrapper"]/div/div/div/div[2]/ul/li[1]
+${SUPPORT_CENTER}                           //footer[@class="c-footer__wrapper"]/div/div/div/div[2]/ul/li[2]
+${FAQ}                                      //footer[@class="c-footer__wrapper"]/div/div/div/div[2]/ul/li[3]
+${SPREAD_THE_WORD_PAGE_CONTENT}             SPREAD THE WORD
+${SUPPORT_CENTER_PAGE_CONTENT}              The first financial gifting platform for kids to truly "take the funny out of money."
+${FAQ_PAGE_CONTENT}                         The Basics
 
 
 
@@ -35,12 +41,12 @@ Clicking on OUR STORY from top navigation
 Verifying text on our story page
     page should contain                      Our Story
 
-Clicking on OUR STORY link form About Us sction on footer
+Clicking on OUR STORY link form About Us section on footer
     Execute Javascript                      $(document).scrollTop(7000)
     sleep                                   3s
     click element                           ${OUR_STORY_FOOTER}
 
-Clicking on Partners Dashboard form About Us sction on footer and verifying the title
+Clicking on Partners Dashboard form About Us section on footer and verifying the title
     Execute Javascript                      $(document).scrollTop(7000)
     sleep                                   3s
     click element                           ${PARTNERS_DASHBOARD_FOOTER}
@@ -50,10 +56,31 @@ Clicking on Partners Dashboard form About Us sction on footer and verifying the 
     title should be                         ${PARTNERS_DASHBOARD_FOOTER_PAGE_TITLE}
 
 
-Clicking on Partners My Family form About Us sction on footer and verifying the title
+Clicking on Partners My Family form About Us section on footer and verifying the title
     Execute Javascript                      $(document).scrollTop(7000)
     sleep                                   3s
     click element                           ${PARTNERS_MY_FAMILY_FOOTER}
     switch window                           locator=new
     sleep                                   5s
     title should be                         ${PARTNERS_MY_FAMILY_FOOTER_PAGE_TITLE}
+
+Clicking on Spread The Word from Resources section on footer and verifying the content
+    Execute Javascript                      $(document).scrollTop(7000)
+    sleep                                   3s
+    click element                           ${SPREAD_THE_WORD}
+    sleep                                   2s
+    page should contain                     ${SPREAD_THE_WORD_PAGE_CONTENT}
+
+Clicking on Support Center from Resources section on footer and verifying the content
+    Execute Javascript                      $(document).scrollTop(7000)
+    sleep                                   3s
+    click element                           ${SUPPORT_CENTER}
+    sleep                                   2s
+    page should contain                     ${SUPPORT_CENTER_PAGE_CONTENT}
+
+Clicking on FAQ from Resources section on footer and verifying the content
+    Execute Javascript                      $(document).scrollTop(7000)
+    sleep                                   3s
+    click element                           ${FAQ}
+    sleep                                   2s
+    page should contain                     ${FAQ_PAGE_CONTENT}

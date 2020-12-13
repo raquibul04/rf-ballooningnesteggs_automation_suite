@@ -28,10 +28,25 @@ Users should be able to navigate to Our Story page
 
 Users should be able to navigate to Partners Dashboard page from footer
     [Documentation]
-    [Tags]    homepage1
-    HomepageApp.Clicking on Partners Dashboard form About Us sction on footer
+    [Tags]    homepage
+    HomepageApp.Clicking on Partners Dashboard form About Us section on footer
 
 Users should be able to navigate to Partners My Family page from footer
     [Documentation]
     [Tags]    homepage
-    HomepageApp.Clicking on Partners My Family form About Us sction on footer
+    HomepageApp.Clicking on Partners My Family form About Us section on footer
+
+Users should be able to navigate to Spread The Word page from footer
+    [Documentation]
+    [Tags]    homepage
+    HomepageApp.Clicking on Spread The Word from Resources section on footer
+
+Users should be able to navigate to Support Center page from footer
+    [Documentation]
+    [Tags]    homepage
+    HomepageApp.Clicking on Support Center from Resources section on footer
+
+Users should be able to navigate to FAQ page from footer
+    [Documentation]
+    [Tags]    homepage
+    HomepageApp.Clicking on FAQ from Resources section on footer
