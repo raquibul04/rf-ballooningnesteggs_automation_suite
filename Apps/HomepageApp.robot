@@ -31,3 +31,16 @@ Clicking on Support Center from Resources section on footer
 
 Clicking on FAQ from Resources section on footer
     HomepagePO.Clicking on FAQ from Resources section on footer and verifying the content
+
+Clicking on Contact Us from Connect section on footer
+    HomepagePO.Clicking on Contact Us from the Connect section on footer and verifying the content
+
+Clicking on Facebook from Connect section on footer
+    HomepagePO.Clicking on Facebook from the Connect section on footer and verifying the content
+
+Clicking on Twitter from Connect section on footer
+    HomepagePO.Clicking on Twitter from the Connect section on footer and verifying the content
+
+Clicking on Instagram from Connect section on footer
+    HomepagePO.Clicking on Instagram from the Connect section on footer and verifying the content
+
