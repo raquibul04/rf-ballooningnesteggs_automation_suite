@@ -50,3 +50,23 @@ Users should be able to navigate to FAQ page from footer
     [Documentation]
     [Tags]    homepage
     HomepageApp.Clicking on FAQ from Resources section on footer
+
+Users should be able to navigate to Contact Us page from footer
+    [Documentation]
+    [Tags]    homepage
+    HomepagePO.Clicking on Contact Us from the Connect section on footer and verifying the content
+
+Users should be able to navigate to Facebook page from footer
+    [Documentation]
+    [Tags]    homepage
+    HomepageApp.Clicking on Facebook from Connect section on footer
+
+Users should be able to navigate to Twitter page from footer
+    [Documentation]
+    [Tags]    homepage
+    HomepageApp.Clicking on Twitter from Connect section on footer
+
+Users should be able to navigate to Instagram page from footer
+    [Documentation]
+    [Tags]    homepage
+    HomepageApp.Clicking on Instagram from Connect section on footer
