@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.3 on win32)" generated="20210112 19:39:18.266" rpa="false">
+<suite id="s1" name="Tests" source="D:\BallooningNestEggs\Tests">
+<suite id="s1-s1" name="HomepageTests" source="D:\BallooningNestEggs\Tests\HomepageTests.robot">
+<test id="s1-s1-t1" name="Users should be able to navigate to BallooningNestEggs website">
+<kw name="Begining the test" library="SetupEnv" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210112 19:39:18.441" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210112 19:39:18.441" endtime="20210112 19:39:21.552"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${PROD}</arg>
+</arguments>
+<msg timestamp="20210112 19:39:21.552" level="INFO">Opening url 'https://www.beta.ballooningnesteggs.com/'</msg>
+<status status="PASS" starttime="20210112 19:39:21.552" endtime="20210112 19:39:22.134"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210112 19:39:22.134" endtime="20210112 19:39:24.289"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210112 19:39:29.293" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210112 19:39:24.289" endtime="20210112 19:39:29.293"></status>
+</kw>
+<status status="PASS" starttime="20210112 19:39:18.441" endtime="20210112 19:39:29.293"></status>
+</kw>
+<kw name="Verifying the balloningnesteggs page title" library="HomepageApp">
+<kw name="Verifying the page title" library="HomepagePO">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${PAGE_TITLE}</arg>
+</arguments>
+<msg timestamp="20210112 19:39:29.298" level="INFO">Page title is 'Ballooning Nest Eggs'.</msg>
+<status status="PASS" starttime="20210112 19:39:29.294" endtime="20210112 19:39:29.298"></status>
+</kw>
+<status status="PASS" starttime="20210112 19:39:29.294" endtime="20210112 19:39:29.298"></status>
+</kw>
+<status status="PASS" starttime="20210112 19:39:29.293" endtime="20210112 19:39:29.298"></status>
+</kw>
+<kw name="Ending the tests by closing the browser" library="SetupEnv" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210112 19:39:29.299" endtime="20210112 19:39:31.490"></status>
+</kw>
+<status status="PASS" starttime="20210112 19:39:29.298" endtime="20210112 19:39:31.490"></status>
+</kw>
+<tags>
+<tag>homepage</tag>
+</tags>
+<status status="PASS" starttime="20210112 19:39:18.440" endtime="20210112 19:39:31.491" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="Users should be able to navigate to Our Story page">
+<kw name="Begining the test" library="SetupEnv" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210112 19:39:31.494" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210112 19:39:31.494" endtime="20210112 19:39:34.602"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${PROD}</arg>
+</arguments>
+<msg timestamp="20210112 19:39:34.602" level="INFO">Opening url 'https://www.beta.ballooningnesteggs.com/'</msg>
+<status status="PASS" starttime="20210112 19:39:34.602" endtime="20210112 19:39:35.241"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210112 19:39:35.241" endtime="20210112 19:39:37.404"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210112 19:39:42.418" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210112 19:39:37.405" endtime="20210112 19:39:42.418"></status>
+</kw>
+<status status="PASS" starttime="20210112 19:39:31.493" endtime="20210112 19:39:42.418"></status>
+</kw>
+<kw name="Clicking on Our Story link from the top navigation" library="HomepageApp">
+<kw name="Clicking on OUR STORY from top navigation" library="HomepagePO">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${OUR_STORY}</arg>
+</arguments>
+<msg timestamp="20210112 19:39:42.419" level="INFO">Clicking element '//div[@class="c-account-menu"]/a[1]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210112 19:39:43.091" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210112 19:39:42.435" endtime="20210112 19:39:43.091"></status>
+</kw>
+<msg timestamp="20210112 19:39:43.093" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=87.0.4280.141)
+</msg>
+<status status="FAIL" starttime="20210112 19:39:42.419" endtime="20210112 19:39:43.093"></status>
+</kw>
+<status status="FAIL" starttime="20210112 19:39:42.419" endtime="20210112 19:39:43.093"></status>
+</kw>
+<status status="FAIL" starttime="20210112 19:39:42.418" endtime="20210112 19:39:43.093"></status>
+</kw>
+<kw name="Ending the tests by closing the browser" library="SetupEnv" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210112 19:39:43.094" endtime="20210112 19:39:45.188"></status>
+</kw>
+<status status="PASS" starttime="20210112 19:39:43.094" endtime="20210112 19:39:45.188"></status>
+</kw>
+<tags>
+<tag>homepage</tag>
+</tags>
+<status status="FAIL" starttime="20210112 19:39:31.492" endtime="20210112 19:39:45.189" critical="yes">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=87.0.4280.141)
+</status>
+</test>
+<test id="s1-s1-t3" name="Users should be able to navigate to Our Story page">
+<kw name="Begining the test" library="SetupEnv" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210112 19:39:45.191" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210112 19:39:45.191" endtime="20210112 19:39:48.271"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${PROD}</arg>
+</arguments>
+<msg timestamp="20210112 19:39:48.271" level="INFO">Opening url 'https://www.beta.ballooningnesteggs.com/'</msg>
+<status status="PASS" starttime="20210112 19:39:48.271" endtime="20210112 19:39:48.851"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210112 19:39:48.851" endtime="20210112 19:39:51.022"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210112 19:39:56.028" level="INFO">
