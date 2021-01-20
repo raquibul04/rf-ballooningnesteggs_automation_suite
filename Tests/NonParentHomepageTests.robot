@@ -53,3 +53,8 @@ Ensure that non parent users should be able to log out from their account
     [Documentation]
     [Tags]  non-parent
     NonParentHomepageApp.Non-parent user logs out from his/her BNE account
+
+Ensure that non parent users should be able to update their profile
+    [Documentation]
+    [Tags]  update
+    NonParentHomepageApp.Non-parent user updates his/her profile

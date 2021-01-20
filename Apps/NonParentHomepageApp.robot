@@ -2,7 +2,7 @@
 Library    SeleniumLibrary
 Resource   ../Apps/LoginApp.robot
 Resource    ../PageObjects/NonParentHomepagePO.robot
-
+Resource    ../PageObjects/UpdatingProfilePO.robot
 
 
 *** Keywords ***
@@ -50,3 +50,28 @@ Non-parent user logs out from his/her BNE account
     LoginApp.User inputs his/her information in order to login to BNE
     sleep    2s
     NonParentHomepagePO.Clicking on Log out from Profile Overlay
+
+Non-parent user updates his/her profile
+    LoginApp.User inputs his/her information in order to login to BNE
+    sleep    2s
+    NonParentHomepagePO.Clicking on My Profile from Profile Overlay
+    sleep    1s
+    UpdatingProfilePO.Updating first name
+    sleep    1s
+    UpdatingProfilePO.Updating last name
+    sleep    1s
+    UpdatingProfilePO.Updaing birth year
+    sleep    1s
+    UpdatingProfilePO.Updaing birth month
+    sleep    1s
+    UpdatingProfilePO.Updaing birth date
+    sleep    1s
+    UpdatingProfilePO.Updating cell phone number
+    sleep    1s
+    UpdatingProfilePO.Updating city
+    sleep    1s
+    UpdatingProfilePO.Updating state
+    sleep    1s
+    UpdatingProfilePO.Updating zip code
+    sleep    1s
+    UpdatingProfilePO.Saving the updated information
