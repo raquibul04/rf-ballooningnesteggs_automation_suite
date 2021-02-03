@@ -26,6 +26,26 @@ ${MY_PROFILE_VERIFYING_TEXT}                    Edit Profile
 ${CONNECT_TO_PAYPAL_VERIFYING_TEXT}             Start accepting gifts
 ${SETTINGS_VERIFYING_TEXT}                      On Ballooning Nest Eggs
 ${LOG_OUT_VERIFYING_TEXT}                       The first financial gifting platform for kids to truly "take the funny out of money."
+
+${TRACKING_GIFT_BUTTON}                         //a[@data-url="https://www.beta.ballooningnesteggs.com/get-my-profile-gifts"]
+${TRACKING_CARDS_BUTTON}                        //a[@data-url="https://www.beta.ballooningnesteggs.com/get-my-profile-cards"]
+${TRACKING_GIFT_BUTTON_VERIFYING_TEXT}          Gifts Sent
+${TRACKING_CARDS_BUTTON_VERIFYING_TEXT}         Cards Received (0)
+
+${CONNECTIONS_LIST}                             //div[@class='c-tabs']//a[@href="https://www.beta.ballooningnesteggs.com/family/connections"]
+${CONTACT_LIST}                                 //div[@class='c-tabs']//a[@href="https://www.beta.ballooningnesteggs.com/contacts"]
+${SEARCH_TAB_CONNECTIONS}                       //div[@class='c-tabs']//a[@href="https://www.beta.ballooningnesteggs.com/search"]
+
+${CONNECTIONS_LIST_VERIFYING_TEXT}              Pending Requests
+${CONTACT_LIST_VERIFYING_TEXT}                  Google Contacts
+${SEARCH_TAB_CONNECTIONS_VERIFYING_TEXT}        Who are you looking for?
+
+${SPREAD_THE_WORD}                              //section//a[@href="https://www.beta.ballooningnesteggs.com/spread-the-word"]
+${NOTIFICATIONS}                                //section//a[@href="https://www.beta.ballooningnesteggs.com/notifications"]
+
+${SPREAD_THE_WORD_VERIFYING_TEXT}               Build Your Community
+${NOTIFICATIONS_VERIFYING_TEXT}                 Notifications
+
 *** Keywords ***
 Clicking on TRACKING link from the header
     click element                               ${TRACKING_HEADER}
@@ -76,4 +96,37 @@ Clicking on Log out from Profile Overlay
     sleep                                       2s
     page should contain                         ${LOG_OUT_VERIFYING_TEXT}
 
+Clicking on GIFTS under Tracking tab
+    click element                               ${TRACKING_GIFT_BUTTON}
+    sleep                                       1s
+    page should contain                         ${TRACKING_GIFT_BUTTON_VERIFYING_TEXT}
 
+Clicking on CARDS under Tracking tab
+    click element                               ${TRACKING_CARDS_BUTTON}
+    sleep                                       1s
+    page should contain                         ${TRACKING_CARDS_BUTTON_VERIFYING_TEXT}
+
+Clicking on Connections under Connections tab
+    click element                               ${CONNECTIONS_LIST}
+    sleep                                       1s
+    page should contain                         ${CONNECTIONS_LIST_VERIFYING_TEXT}
+
+Clicking on Contacts under Connections tab
+    click element                               ${CONTACT_LIST}
+    sleep                                       1s
+    page should contain                         ${CONTACT_LIST_VERIFYING_TEXT}
+
+Clicking on Search under Connections tab
+    click element                               ${SEARCH_TAB_CONNECTIONS}
+    sleep                                       1s
+    page should contain                         ${SEARCH_TAB_CONNECTIONS_VERIFYING_TEXT}
+
+Clicking on Spread the word link
+    click element                               ${SPREAD_THE_WORD}
+    sleep                                       1s
+    page should contain                         ${SPREAD_THE_WORD_VERIFYING_TEXT}
+
+Clicking on Notifications link
+    click element                               ${NOTIFICATIONS}
+    sleep                                       1s
+    page should contain                         ${NOTIFICATIONS_VERIFYING_TEXT}

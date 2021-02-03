@@ -58,3 +58,23 @@ Ensure that non parent users should be able to update their profile
     [Documentation]
     [Tags]  update
     NonParentHomepageApp.Non-parent user updates his/her profile
+
+Ensure that non parent user can toggle between gifts and cards tab under tracking tab
+    [Documentation]
+    [Tags]  update
+    NonParentHomepageApp.Non-parent user toggles between Gifts and Cards tabs under tracking tab
+
+Ensure that non parent user can toggle amoung Connections, Contacts and Search tabs under Connections tab
+    [Documentation]
+    [Tags]  update
+    NonParentHomepageApp.Non-parent user toggles among Connections, Contacts and Search tabs under Connections tab
+
+Ensure that non parent user can navigate to the spread the word page
+    [Documentation]
+    [Tags]  update1
+    NonParentHomepageApp.Non-parent user navigates to the Spread the word page
+
+Ensure that non parent user can navigate to the Notifications page
+    [Documentation]
+    [Tags]  update1
+    NonParentHomepageApp.Non-parent user navigates to the Notifications page

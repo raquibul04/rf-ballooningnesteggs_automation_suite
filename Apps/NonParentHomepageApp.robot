@@ -75,3 +75,30 @@ Non-parent user updates his/her profile
     UpdatingProfilePO.Updating zip code
     sleep    1s
     UpdatingProfilePO.Saving the updated information
+
+Non-parent user toggles between Gifts and Cards tabs under tracking tab
+    LoginApp.User inputs his/her information in order to login to BNE
+    sleep    2s
+    NonParentHomepagePO.Clicking on TRACKING link from the header
+    sleep    1s
+    NonParentHomepagePO.Clicking on CARDS under Tracking tab
+    NonParentHomepagePO.Clicking on GIFTS under Tracking tab
+
+Non-parent user toggles among Connections, Contacts and Search tabs under Connections tab
+    LoginApp.User inputs his/her information in order to login to BNE
+    sleep    2s
+    NonParentHomepagePO.Clicking on CONNECTIONS link from the header
+    sleep   1s
+    NonParentHomepagePO.Clicking on Contacts under Connections tab
+    NonParentHomepagePO.Clicking on Search under Connections tab
+    NonParentHomepagePO.Clicking on Connections under Connections tab
+
+Non-parent user navigates to the Spread the word page
+    LoginApp.User inputs his/her information in order to login to BNE
+    sleep    2s
+    NonParentHomepagePO.Clicking on Spread the word link
+
+Non-parent user navigates to the Notifications page
+    LoginApp.User inputs his/her information in order to login to BNE
+    sleep    2s
+    NonParentHomepagePO.Clicking on Notifications link
