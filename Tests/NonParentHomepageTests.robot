@@ -78,3 +78,25 @@ Ensure that non parent user can navigate to the Notifications page
     [Documentation]
     [Tags]  update1
     NonParentHomepageApp.Non-parent user navigates to the Notifications page
+
+Ensure that non parent user should not be able to update his/her profile by leaving the firstname field empty
+    [Documentation]
+    [Tags]  update123
+    NonParentHomepageApp.Non-parent user tries to update his/her profile by leaving Firstname field blank
+
+Ensure that non parent user should not be able to update his/her profile by leaving the lastname field empty
+    [Documentation]
+    [Tags]  update123
+    NonParentHomepageApp.Non-parent user tries to update his/her profile by leaving Lastname field blank
+
+Ensure that non parent user should not be able to update his/her profile by leaving the City field empty
+    [Documentation]
+    [Tags]  update123
+    NonParentHomepageApp.Non-parent user tries to update his/her profile by leaving City field blank
+
+Ensure that non parent user should not be able to update his/her profile by leaving the Zip code field empty
+    [Documentation]
+    [Tags]  update123
+    NonParentHomepageApp.Non-parent user tries to update his/her profile by leaving Zip code field blank
+
+

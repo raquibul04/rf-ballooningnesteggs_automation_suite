@@ -102,3 +102,111 @@ Non-parent user navigates to the Notifications page
     LoginApp.User inputs his/her information in order to login to BNE
     sleep    2s
     NonParentHomepagePO.Clicking on Notifications link
+
+Non-parent user tries to update his/her profile by leaving Firstname field blank
+    LoginApp.User inputs his/her information in order to login to BNE
+    sleep    2s
+    NonParentHomepagePO.Clicking on My Profile from Profile Overlay
+    sleep    1s
+    UpdatingProfilePO.Leaving First Name field blank
+    sleep    1s
+    UpdatingProfilePO.Updating last name
+    sleep    1s
+    UpdatingProfilePO.Updaing birth year
+    sleep    1s
+    UpdatingProfilePO.Updaing birth month
+    sleep    1s
+    UpdatingProfilePO.Updaing birth date
+    sleep    1s
+    UpdatingProfilePO.Updating cell phone number
+    sleep    1s
+    UpdatingProfilePO.Updating city
+    sleep    1s
+    UpdatingProfilePO.Updating state
+    sleep    1s
+    UpdatingProfilePO.Updating zip code
+    sleep    1s
+    UpdatingProfilePO.Clicking on the Update button
+    sleep    1s
+    UpdatingProfilePO.Leaving firstname blank error state
+
+Non-parent user tries to update his/her profile by leaving Lastname field blank
+    LoginApp.User inputs his/her information in order to login to BNE
+    sleep    2s
+    NonParentHomepagePO.Clicking on My Profile from Profile Overlay
+    sleep    1s
+    UpdatingProfilePO.Updating first name
+    sleep    1s
+    UpdatingProfilePO.Leaving Last Name field blank
+    sleep    1s
+    UpdatingProfilePO.Updaing birth year
+    sleep    1s
+    UpdatingProfilePO.Updaing birth month
+    sleep    1s
+    UpdatingProfilePO.Updaing birth date
+    sleep    1s
+    UpdatingProfilePO.Updating cell phone number
+    sleep    1s
+    UpdatingProfilePO.Updating city
+    sleep    1s
+    UpdatingProfilePO.Updating state
+    sleep    1s
+    UpdatingProfilePO.Updating zip code
+    sleep    1s
+    UpdatingProfilePO.Clicking on the Update button
+    sleep    1s
+    UpdatingProfilePO.Leaving Last Name field blank
+
+Non-parent user tries to update his/her profile by leaving City field blank
+    LoginApp.User inputs his/her information in order to login to BNE
+    sleep    2s
+    NonParentHomepagePO.Clicking on My Profile from Profile Overlay
+    sleep    1s
+    UpdatingProfilePO.Updating first name
+    sleep    1s
+    UpdatingProfilePO.Updating last name
+    sleep    1s
+    UpdatingProfilePO.Updaing birth year
+    sleep    1s
+    UpdatingProfilePO.Updaing birth month
+    sleep    1s
+    UpdatingProfilePO.Updaing birth date
+    sleep    1s
+    UpdatingProfilePO.Updating cell phone number
+    sleep    1s
+    UpdatingProfilePO.Leaving City field blank
+    sleep    1s
+    UpdatingProfilePO.Updating state
+    sleep    1s
+    UpdatingProfilePO.Updating zip code
+    sleep    1s
+    UpdatingProfilePO.Clicking on the Update button
+    sleep    1s
+    UpdatingProfilePO.Leaving City blank error state
+
+Non-parent user tries to update his/her profile by leaving Zip code field blank
+    LoginApp.User inputs his/her information in order to login to BNE
+    sleep    2s
+    NonParentHomepagePO.Clicking on My Profile from Profile Overlay
+    sleep    1s
+    UpdatingProfilePO.Updating first name
+    sleep    1s
+    UpdatingProfilePO.Updating last name
+    sleep    1s
+    UpdatingProfilePO.Updaing birth year
+    sleep    1s
+    UpdatingProfilePO.Updaing birth month
+    sleep    1s
+    UpdatingProfilePO.Updaing birth date
+    sleep    1s
+    UpdatingProfilePO.Updating cell phone number
+    sleep    1s
+    UpdatingProfilePO.Updating city
+    sleep    1s
+    UpdatingProfilePO.Updating state
+    sleep    1s
+    UpdatingProfilePO.Leaving Zip field blank
+    sleep    1s
+    UpdatingProfilePO.Clicking on the Update button
+    sleep    1s
+    UpdatingProfilePO.Leaving Zip code blank error state
