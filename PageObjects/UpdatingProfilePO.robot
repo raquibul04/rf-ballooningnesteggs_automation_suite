@@ -26,6 +26,12 @@ ${UPDATING_STATE_TEXT}                              37
 ${UPDATING_ZIP_CODE_TEXT}                           11208
 ${UPDATE_CONFIRMATION_TEXT}                         Your profile is updated
 
+${BLANK_FIRST_NAME_ERROR_STATE}                     First name field can not be empty!
+${BLANK_LAST_NAME_ERROR_STATE}                      Last name field can not be empty!
+${BLANK_CITY_ERROR_STATE}                           City field can not be empty!
+${BLANK_ZIP_ERROR_STATE}                            Zip field can not be empty!
+
+
 *** Keywords ***
 Updating first name
     clear element text                              ${UPDATING_FIRST_NAME}
@@ -85,3 +91,30 @@ Saving the updated information
     click button                                    ${UPDATING_INFORMATION_BUTTON}
     sleep     3s
     page should contain                             ${UPDATE_CONFIRMATION_TEXT}
+
+Leaving First Name field blank
+    clear element text                              ${UPDATING_FIRST_NAME}
+
+Leaving Last Name field blank
+    clear element text                              ${UPDATING_LAST_NAME}
+
+Leaving City field blank
+    clear element text                              ${UPDATING_CITY}
+
+Leaving Zip field blank
+    clear element text                              ${UPDATING_ZIP_CODE}
+
+Leaving firstname blank error state
+    page should contain                             ${BLANK_FIRST_NAME_ERROR_STATE}
+
+Leaving lastname blank error state
+    page should contain                             ${BLANK_LAST_NAME_ERROR_STATE}
+
+Leaving City blank error state
+    page should contain                             ${BLANK_CITY_ERROR_STATE}
+
+Leaving Zip code blank error state
+    page should contain                             ${BLANK_ZIP_ERROR_STATE}
+
+Clicking on the Update button
+    click button                                   ${UPDATING_INFORMATION_BUTTON}
