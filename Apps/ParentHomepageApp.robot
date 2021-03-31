@@ -10,3 +10,13 @@ Parent user navigates to the Family tab from the header section on homepage
     LoginApp.User inputs his/her information as a parent in order to login to BNE
     sleep    2s
     ParentHomepagePO.Clicking on Family tab on the top navigation
+
+Parent users navigates to the connections page by clicking on the Add connections icon
+    LoginApp.User inputs his/her information as a parent in order to login to BNE
+    sleep    2s
+    ParentHomepagePO.Clicking on Add connection icon from See What Everyone’s Up To label
+
+Prent users navigates to the gifts page by clicking on the gift icon under notifications
+    LoginApp.User inputs his/her information as a parent in order to login to BNE
+    sleep    2s
+    ParentHomepagePO.Clicking on the gift icon in order to navigate to the gift page

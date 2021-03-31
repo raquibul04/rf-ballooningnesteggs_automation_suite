@@ -9,7 +9,17 @@ Test Teardown       Ending the tests by closing the browser
 
 
 *** Test Cases ***
-Ensure that non parent users should be able to navigate to the Tracking link from the header
+Ensure that parent users should be able to navigate to the Tracking link from the header
     [Documentation]
-    [Tags]  non-parent
+    [Tags]  parent
     ParentHomepageApp.Parent user navigates to the Family tab from the header section on homepage
+
+Ensure that parent users should be able to navigate to the connections page by clicking on the Add Connections icon
+    [Documentation]
+    [Tags]  parent
+    ParentHomepageApp.Parent users navigates to the connections page by clicking on the Add connections icon
+
+Ensure that parent users should be able to navigate to the connections page by clicking on the Add Connections icon
+    [Documentation]
+    [Tags]  parent1
+    ParentHomepageApp.Prent users navigates to the gifts page by clicking on the gift icon under notifications
