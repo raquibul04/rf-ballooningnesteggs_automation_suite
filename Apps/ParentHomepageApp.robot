@@ -20,3 +20,13 @@ Prent users navigates to the gifts page by clicking on the gift icon under notif
     LoginApp.User inputs his/her information as a parent in order to login to BNE
     sleep    2s
     ParentHomepagePO.Clicking on the gift icon in order to navigate to the gift page
+
+Parent user navigates to one of the event pages from the homepage
+    LoginApp.User inputs his/her information as a parent in order to login to BNE
+    sleep    2s
+    ParentHomepagePO.Clicking on an event from the homepage
+
+Parent user selects a child for the event card
+    LoginApp.User inputs his/her information as a parent in order to login to BNE
+    sleep    2s
+    ParentHomepagePO.Selecting a child for an event card

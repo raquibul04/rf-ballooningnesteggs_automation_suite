@@ -23,3 +23,13 @@ Ensure that parent users should be able to navigate to the connections page by c
     [Documentation]
     [Tags]  parent1
     ParentHomepageApp.Prent users navigates to the gifts page by clicking on the gift icon under notifications
+
+Ensure that the parent users can navigate to the event page from homepage
+    [Documentation]
+    [Tags]  parent
+    ParentHomepageApp.Parent user navigates to one of the event pages from the homepage
+
+Ensure that the parent users can navigate to the event page from homepage
+    [Documentation]
+    [Tags]  parent1
+    ParentHomepageApp.Parent user selects a child for the event card
