@@ -11,13 +11,22 @@ ${ADD_CONNECTION_ICON_VERIFYING_TEXT}                   My Network
 ${GIFT_ICON_UNDER_NOTIFICATION}                         //section[@class="c-notifications"]/ul/li[2]/a
 ${GIFT_ICON_UNDER_NOTIFICATION_VERIFYING_TEXT}          Woo hoo
 
-${EVENT_LINK_HOMEPAGE}              //div[@id='post-data']/ul/li[1]/article/p[2]/a
-${EVENT_LINK_VERIFYING_TEXT}        Comments
+${EVENT_LINK_HOMEPAGE}                                  //div[@id='post-data']/ul/li[1]/article/p[2]/a
+${EVENT_LINK_VERIFYING_TEXT}                            Comments
 
-${SELECT_CHILD_BUTTON}              //button[@class="c-child-select"]
-${CHILD_NAME}                       //ul[@class="c-child-select__list is-visible"]/li[2]
+${SELECT_CHILD_BUTTON}                                  //button[@class="c-child-select"]
+${CHILD_NAME}                                           //ul[@class="c-child-select__list is-visible"]/li[2]
 
 
+${EDIT_FAMILY_FROM_FAMILY_TAB}                          //div[@class="l-group l-group--wrap"]/div[2]/div[2]/a
+${EDIT_FAMILY_FROM_FAMILY_TAB_VERIFYING_TEXT}           My Family's Profile
+
+${EVENTS_CARD}                                          //div[@id="active-content-tabs"]/div/ul[1]/li[1]/article
+${GIFTS_TAB}                                            //div[@class="c-tabs"]/div/ul/li[2]/a
+${EVENTS_TAB}                                           //div[@class="c-tabs"]/div/ul/li[3]/a
+${CARDS_TAB}                                            //div[@class="c-tabs"]/div/ul/li[4]/a
+${GIFTS_TAB_VERIFYING_TEXT}                             Received Gifts
+${CARDS_TAB_VERIFYING_TEXT}                             Cards Received
 *** Keywords ***
 Clicking on Family tab on the top navigation
     click element                   ${FAMILY_HEADER}
@@ -47,4 +56,25 @@ Selecting a child for an event card
     click element                   ${CHILD_NAME}
     page should contain             James
 
+Clicking on Edit Profile button
+    click element                   ${EDIT_FAMILY_FROM_FAMILY_TAB}
+    sleep                           1s
+    page should contain             ${EDIT_FAMILY_FROM_FAMILY_TAB_VERIFYING_TEXT}
 
+Clicking and verifying My Updates tab
+    element should be visible       ${EVENTS_CARD}
+
+Clicking on Gifts tab
+    click element                   ${GIFTS_TAB}
+    sleep                           1s
+    page should contain             ${GIFTS_TAB_VERIFYING_TEXT}
+
+Clicking on Events tab
+    click element                   ${EVENTS_TAB}
+    sleep                           1s
+    element should be visible       ${EVENTS_CARD}
+
+Clicking on Cards tab
+    click element                   ${CARDS_TAB}
+    sleep                           1s
+    page should contain             ${CARDS_TAB_VERIFYING_TEXT}
