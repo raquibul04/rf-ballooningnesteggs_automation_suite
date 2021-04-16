@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.3 on win32)" generated="20210414 14:34:55.444" rpa="false">
+<suite id="s1" name="ParentHomepageTests" source="D:\BallooningNestEggs\Tests\ParentHomepageTests.robot">
+<test id="s1-t1" name="Ensure that the parent users can navigate to the CARDS tab from My Family tab">
+<kw name="Begining the test" library="SetupEnv" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210414 14:34:55.625" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210414 14:34:55.625" endtime="20210414 14:34:56.684"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${PROD}</arg>
+</arguments>
+<msg timestamp="20210414 14:34:56.684" level="INFO">Opening url 'https://www.beta.ballooningnesteggs.com/'</msg>
+<status status="PASS" starttime="20210414 14:34:56.684" endtime="20210414 14:34:57.917"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210414 14:34:57.917" endtime="20210414 14:34:58.031"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210414 14:35:03.037" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210414 14:34:58.031" endtime="20210414 14:35:03.037"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:34:55.625" endtime="20210414 14:35:03.037"></status>
+</kw>
+<kw name="Parent user navigates to the Cards tab from the Family tab" library="ParentHomepageApp">
+<kw name="User inputs his/her information as a parent in order to login to BNE" library="LoginApp">
+<kw name="Clicking on Log in button" library="HomepagePO">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>https://www.beta.ballooningnesteggs.com/login</arg>
+</arguments>
+<msg timestamp="20210414 14:35:03.038" level="INFO">Opening url 'https://www.beta.ballooningnesteggs.com/login'</msg>
+<status status="PASS" starttime="20210414 14:35:03.038" endtime="20210414 14:35:03.274"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210414 14:35:06.287" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210414 14:35:03.274" endtime="20210414 14:35:06.287"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:03.038" endtime="20210414 14:35:06.287"></status>
+</kw>
+<kw name="Inputting user's email on the email field for a parent account" library="LoginPO">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_EMAIL_FIELD}</arg>
+<arg>${LOGIN_EMAIL_FIELD_VALUE_PA}</arg>
+</arguments>
+<msg timestamp="20210414 14:35:06.287" level="INFO">Typing text 'xtraemily2@gmail.com' into text field '//input[@placeholder="Email"]'.</msg>
+<status status="PASS" starttime="20210414 14:35:06.287" endtime="20210414 14:35:06.345"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20210414 14:35:07.352" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210414 14:35:06.345" endtime="20210414 14:35:07.352"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:06.287" endtime="20210414 14:35:07.352"></status>
+</kw>
+<kw name="Inputting user's password on the password field for a parent account" library="LoginPO">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${LOGIN_PASSWORD_FIELD}</arg>
+<arg>${LOGIN_PASSWORD_FIELD_VALUE_PA}</arg>
+</arguments>
+<msg timestamp="20210414 14:35:07.352" level="INFO">Typing text 'xtraemily2x' into text field '//input[@placeholder="Password"]'.</msg>
+<status status="PASS" starttime="20210414 14:35:07.352" endtime="20210414 14:35:07.404"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20210414 14:35:08.412" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210414 14:35:07.404" endtime="20210414 14:35:08.412"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:07.352" endtime="20210414 14:35:08.412"></status>
+</kw>
+<kw name="Clicking on signin button" library="LoginPO">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${SIGN_IN_BUTTON}</arg>
+</arguments>
+<msg timestamp="20210414 14:35:08.412" level="INFO">Clicking element '//button[@type="submit"]'.</msg>
+<status status="PASS" starttime="20210414 14:35:08.412" endtime="20210414 14:35:09.204"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210414 14:35:11.210" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210414 14:35:09.204" endtime="20210414 14:35:11.210"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:08.412" endtime="20210414 14:35:11.210"></status>
+</kw>
+<kw name="Verifying the page title" library="HomepagePO">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>${PAGE_TITLE}</arg>
+</arguments>
+<msg timestamp="20210414 14:35:11.214" level="INFO">Page title is 'Ballooning Nest Eggs'.</msg>
+<status status="PASS" starttime="20210414 14:35:11.210" endtime="20210414 14:35:11.214"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:11.210" endtime="20210414 14:35:11.214"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:03.038" endtime="20210414 14:35:11.214"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210414 14:35:13.227" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210414 14:35:11.214" endtime="20210414 14:35:13.227"></status>
+</kw>
+<kw name="Clicking on Family tab on the top navigation" library="ParentHomepagePO">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${FAMILY_HEADER}</arg>
+</arguments>
+<msg timestamp="20210414 14:35:13.228" level="INFO">Clicking element '//nav[@class="c-nav"]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20210414 14:35:13.227" endtime="20210414 14:35:13.688"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2s</arg>
+</arguments>
+<msg timestamp="20210414 14:35:15.694" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210414 14:35:13.688" endtime="20210414 14:35:15.694"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${FAMILY_VERIFYING_TEXT}</arg>
+</arguments>
+<msg timestamp="20210414 14:35:15.703" level="INFO">Current page contains text 'My Family'.</msg>
+<status status="PASS" starttime="20210414 14:35:15.694" endtime="20210414 14:35:15.703"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:13.227" endtime="20210414 14:35:15.704"></status>
+</kw>
+<kw name="Clicking on Cards tab" library="ParentHomepagePO">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${CARDS_TAB}</arg>
+</arguments>
+<msg timestamp="20210414 14:35:15.704" level="INFO">Clicking element '//div[@class="c-tabs"]/div/ul/li[4]/a'.</msg>
+<status status="PASS" starttime="20210414 14:35:15.704" endtime="20210414 14:35:15.735"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>1s</arg>
+</arguments>
+<msg timestamp="20210414 14:35:16.740" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20210414 14:35:15.735" endtime="20210414 14:35:16.740"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${CARDS_TAB_VERIFYING_TEXT}</arg>
+</arguments>
+<msg timestamp="20210414 14:35:16.749" level="INFO">Current page contains text 'Cards Received'.</msg>
+<status status="PASS" starttime="20210414 14:35:16.740" endtime="20210414 14:35:16.749"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:15.704" endtime="20210414 14:35:16.749"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:03.037" endtime="20210414 14:35:16.749"></status>
+</kw>
+<kw name="Ending the tests by closing the browser" library="SetupEnv" type="teardown">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210414 14:35:16.750" endtime="20210414 14:35:18.851"></status>
+</kw>
+<status status="PASS" starttime="20210414 14:35:16.750" endtime="20210414 14:35:18.851"></status>
+</kw>
+<tags>
+<tag>parent123</tag>
+</tags>
+<status status="PASS" starttime="20210414 14:34:55.624" endtime="20210414 14:35:18.853" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210414 14:34:55.445" endtime="20210414 14:35:18.854"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">parent123</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="ParentHomepageTests">ParentHomepageTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -30,3 +30,33 @@ Parent user selects a child for the event card
     LoginApp.User inputs his/her information as a parent in order to login to BNE
     sleep    2s
     ParentHomepagePO.Selecting a child for an event card
+
+Parent user navigate to the Edit Family page
+    LoginApp.User inputs his/her information as a parent in order to login to BNE
+    sleep    2s
+    ParentHomepagePO.Clicking on Family tab on the top navigation
+    ParentHomepagePO.Clicking on Edit Profile button
+
+Parent user checks the content under MY Updates tab the from Family tab
+    LoginApp.User inputs his/her information as a parent in order to login to BNE
+    sleep    2s
+    ParentHomepagePO.Clicking on Family tab on the top navigation
+    ParentHomepagePO.Clicking and verifying My Updates tab
+
+Parent user navigates to the Gifts tab from the Family tab
+    LoginApp.User inputs his/her information as a parent in order to login to BNE
+    sleep    2s
+    ParentHomepagePO.Clicking on Family tab on the top navigation
+    ParentHomepagePO.Clicking on Gifts tab
+
+Parent user navigates to the Events tab from the Family tab
+    LoginApp.User inputs his/her information as a parent in order to login to BNE
+    sleep    2s
+    ParentHomepagePO.Clicking on Family tab on the top navigation
+    ParentHomepagePO.Clicking on Events tab
+
+Parent user navigates to the Cards tab from the Family tab
+    LoginApp.User inputs his/her information as a parent in order to login to BNE
+    sleep    2s
+    ParentHomepagePO.Clicking on Family tab on the top navigation
+    ParentHomepagePO.Clicking on Cards tab
